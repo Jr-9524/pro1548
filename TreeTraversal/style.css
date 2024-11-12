@@ -1,0 +1,162 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    right: 15px;
+}
+.showbtn, .addbtn{
+    padding: 8px;
+    background-color: dodgerblue;
+    border: none;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.container-1{
+    border: 2px solid;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 2rem;
+    justify-content: flex-start;
+    width: fit-content;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    max-height: 500px;
+    position: relative;
+    min-width: 250px;
+}
+
+.item{
+    border: 2px solid;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 12px;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    gap: 12px;
+
+    img{
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        border: 2px solid;
+        border-radius: 12px;
+    }
+
+    button{
+        width: 150px;
+        padding: 8px 12px;
+        margin: auto;
+        border-radius: 12px;
+        border: none;
+        background-color: dodgerblue;
+        color: aliceblue;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.container-2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+    img{
+        cursor: pointer;
+    }
+
+    h2{
+        align-self: center;
+    }
+
+    #productSidebarContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    span{
+        border: 1px solid;
+        border-color: rgb(181, 215, 244);
+        padding: 4px;
+        width: 500px;
+        cursor: pointer;
+    }
+
+    li:hover{
+        opacity: 0.9;
+        background-color: rgb(212, 232, 249);
+    }
+}
+
+.container-3{
+    display: none;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid;
+    width: 500px;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;        
+    transform: translate(-50%, -50%);  
+    background-color: aliceblue;
+
+    form{
+        padding: 64px;
+    }
+
+    input, textarea{
+        padding: 6px;
+        width: 100%;
+        resize: none;
+        margin-bottom: 12px;
+    }
+    
+    button{
+        width: 80px;
+        padding: 8px;
+        margin: auto;
+        border-radius: 12px;
+        border: none;
+        background-color: dodgerblue;
+        color: aliceblue;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .itemclosebtn{
+        position: absolute;
+        right: 12px;
+        top: 5px;
+        width: 25px;
+        height: 25px;
+        background-color:crimson;
+    }
+
+}
